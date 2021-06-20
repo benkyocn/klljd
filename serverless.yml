@@ -56,7 +56,7 @@ inputs:
     - timer: #天天提鹅 #5G超级盲盒 #省钱大赢家之翻翻乐
         parameters:
           name: dailyegg_superredrain_mohe_bigwinner
-          cronExpression: "0 1 1-23 * * * *"
+          cronExpression: "0 1 7-23 * * * *"
           enable: true
           argument: jd_daily_egg&jd_super_redrain&jd_mohe&jd_big_winner
     - timer: #东东超市 #京喜财富岛 #京享值PK # 京喜牧场#电技经理
