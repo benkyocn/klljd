@@ -20,7 +20,7 @@ inputs:
     - timer: #签到 #摇京豆 #店铺签到 #进店领豆
         parameters:
           name: beansign_clublottery_carexchange_shop
-          cronExpression: "0 1 0,7 * * * *"
+          cronExpression: "0 3 0,7,21 * * * *"
           enable: true
           argument: jd_bean_sign&jd_club_lottery&jd_car_exchange&jd_monk_inter_shop_sign&jd_shop
     - timer: #取关京东店铺商品 #京东抽奖机 #京东汽车 #京东秒秒币 #天天提鹅 #领金贴#送豆得豆#点点券
