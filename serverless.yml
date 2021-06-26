@@ -25,7 +25,7 @@ inputs:
           argument: jd_bean_sign&jd_club_lottery&jd_car_exchange&jd_monk_inter_shop_sign&jd_shop
     - timer: #取关京东店铺商品 #京东抽奖机 #京东汽车 #京东秒秒币 #天天提鹅 #领金贴#送豆得豆#点点券
         parameters:
-          name: unsubscribe_lotteryMachine_car_ms_jintie
+          name: unsubscribe_lotteryMachine_car_ms_jintie_ljd
           cronExpression: "0 0 1,6,16 * * * *"
           enable: true
           argument: jd_unsubscribe&jd_lotteryMachine&jd_car&jd_ms&jd_get_share_code&jd_ljd
@@ -37,7 +37,7 @@ inputs:
           argument: jd_fruit&jd_pet&jd_speed_sign&jd_speed_redpocke&jd_beauty
     - timer: #宠汪汪喂食 #宠汪汪 #摇钱树 #京东种豆得豆 #京喜工厂 #东东工厂 #健康社区收取能量
         parameters:
-          name: feedPets_joy_moneyTree_plantBean_dreamFactory_jdfactory_healthenergy
+          name: feedPets_joy_moneyTree_plantBean_jdfactory_healthenergy
           cronExpression: "0 3 0,6-23/1 * * * *"
           enable: true
           argument: jd_joy_feedPets&jd_joy&jd_moneyTree&jd_plantBean&jd_jdfactory&jd_z_health_energy
@@ -55,7 +55,7 @@ inputs:
           argument: jd_z_health_community&jd_sendBeans&jd_necklace&jd_live_lottery_social
     - timer: #天天提鹅 #5G超级盲盒 #省钱大赢家之翻翻乐#天天加速
         parameters:
-          name: dailyegg_superredrain_mohe_bigwinner
+          name: dailyegg_superredrain_mohe_bigwinner_speed
           cronExpression: "0 1 1,4,7,11,15,19,22 * * * *"
           enable: true
           argument: jd_daily_egg&jd_super_redrain&jd_mohe&jd_big_winner&jd_speed
