@@ -17,18 +17,18 @@ inputs:
   timeout: 86400 # 超时时间，单位秒
   asyncRunEnable: true # 是否启用异步执行
   events: #触发器
-    - timer: #签到 #摇京豆 #店铺签到 #进店领豆
+    - timer: #签到 #摇京豆 #店铺签到 #进店领豆#特物Z#天天优惠大乐透
         parameters:
-          name: beansign_clublottery_carexchange_shop
+          name: beansign_clublottery_carexchange_shop_superBrand_DrawEntrance
           cronExpression: "0 3 0,7,21 * * * *"
           enable: true
-          argument: jd_bean_sign&jd_club_lottery&jd_car_exchange&jd_monk_inter_shop_sign&jd_shop
+          argument: jd_bean_sign&jd_club_lottery&jd_car_exchange&jd_monk_inter_shop_sign&jd_shop&jd_superBrand&jd_DrawEntrance
     - timer: #取关京东店铺商品 #京东抽奖机 #京东汽车 #京东秒秒币 #天天提鹅 #领金贴#送豆得豆#点点券
         parameters:
-          name: unsubscribe_lotteryMachine_car_ms_jintie_ljd
+          name: unsubscribe_lotteryMachine_car_ms_jintie_necklace
           cronExpression: "0 0 1,6,16 * * * *"
           enable: true
-          argument: jd_unsubscribe&jd_lotteryMachine&jd_car&jd_ms&jd_ljd
+          argument: jd_unsubscribe&jd_lotteryMachine&jd_car&jd_ms&jd_necklace&
     - timer: #东东农场 #东东萌宠  #京东极速版红包 #美丽研究院#PK
         parameters:
           name: fruit_pet_speedsign_speedredpocke_beauty
@@ -56,7 +56,7 @@ inputs:
     - timer: #5G超级盲盒 #省钱大赢家之翻翻乐#天天加速#PK
         parameters:
           name: superredrain_mohe_bigwinner_speed_jxzpk
-          cronExpression: "0 1 1,4,7,11,15,19,22 * * * *"
+          cronExpression: "0 0 1,3,5,7,10,15,20 * * * *"
           enable: true
           argument: jd_mohe&jd_speed&jd_jxzpk
     - timer: #东东超市 #京喜财富岛 # 京喜牧场#电技经理
