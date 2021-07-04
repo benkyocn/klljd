@@ -25,10 +25,10 @@ inputs:
           argument: jd_bean_sign&jd_club_lottery&jd_car_exchange&jd_monk_inter_shop_sign&jd_shop&jd_superBrand&jd_DrawEntrance
     - timer: #取关京东店铺商品 #京东抽奖机 #京东汽车 #京东秒秒币 #天天提鹅 #领金贴#送豆得豆#点点券
         parameters:
-          name: unsubscribe_lotteryMachine_car_ms_jintie_necklace
+          name: unsubscribe_lotteryMachine_car_ms_jintie_necklace_ddo_pk
           cronExpression: "0 0 1,6,16 * * * *"
           enable: true
-          argument: jd_unsubscribe&jd_lotteryMachine&jd_car&jd_ms&jd_necklace&
+          argument: jd_unsubscribe&jd_lotteryMachine&jd_car&jd_ms&jd_necklace&jd_ddo_pk
     - timer: #东东农场 #东东萌宠  #京东极速版红包 #美丽研究院#PK
         parameters:
           name: fruit_pet_speedsign_speedredpocke_beauty
