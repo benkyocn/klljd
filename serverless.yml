@@ -29,12 +29,12 @@ inputs:
           cronExpression: "0 0 1,6,16 * * * *"
           enable: true
           argument: jd_unsubscribe&jd_lotteryMachine&jd_car&jd_ms&jd_necklace&jd_ddo_pk
-    - timer: #东东农场 #东东萌宠  #京东极速版红包 #美丽研究院#PK
+    - timer: #东东农场 #东东萌宠  #京东极速版红包 #美丽研究院#PK&我是大佬板
         parameters:
           name: fruit_pet_speedsign_speedredpocke_beauty
           cronExpression: "0 5 0-18/6,8 * * * *"
           enable: true
-          argument: jd_fruit&jd_pet&jd_speed_sign&jd_speed_redpocke&jd_beauty
+          argument: jd_fruit&jd_pet&jd_speed_sign&jd_speed_redpocke&jd_beauty&jd_wsdlb
     - timer: #宠汪汪喂食 #宠汪汪 #摇钱树 #京东种豆得豆 #京喜工厂 #东东工厂 #健康社区收取能量
         parameters:
           name: feedPets_joy_moneyTree_plantBean_jdfactory_healthenergy
