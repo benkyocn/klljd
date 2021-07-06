@@ -20,13 +20,13 @@ inputs:
     - timer: #签到 #摇京豆 #店铺签到 #进店领豆#特物Z#天天优惠大乐透
         parameters:
           name: beansign_clublottery_carexchange_shop_superBrand_DrawEntrance
-          cronExpression: "0 3 0,7,21 * * * *"
+          cronExpression: "0 3 0,2,5,9,21 * * * *"
           enable: true
           argument: jd_bean_sign&jd_club_lottery&jd_car_exchange&jd_monk_inter_shop_sign&jd_shop&jd_superBrand&jd_DrawEntrance
     - timer: #取关京东店铺商品 #京东抽奖机 #京东汽车 #京东秒秒币 #天天提鹅 #领金贴#送豆得豆#点点券
         parameters:
           name: unsubscribe_lotteryMachine_car_ms_jintie_necklace_ddo_pk
-          cronExpression: "0 0 1,6,16 * * * *"
+          cronExpression: "0 0 1,6,13,16,23 * * * *"
           enable: true
           argument: jd_unsubscribe&jd_lotteryMachine&jd_car&jd_ms&jd_necklace&jd_ddo_pk
     - timer: #东东农场 #东东萌宠  #京东极速版红包 #美丽研究院#PK&我是大佬板
