@@ -43,16 +43,17 @@ inputs:
           argument: jd_moneyTree&jd_plantBean&jd_jdfactory&jd_z_health_energy&jd_joy_park_task
     - timer: #宠汪汪积分兑换京豆 #签到领现金 #东东小窝 #京东直播 #金榜创造营 
         parameters:
-          name: joyreward_cash_smallhome_live_bookshop_qqxing
+          name: joyreward_cash_smallhome_
+          _bookshop_qqxing
           cronExpression: "0 0 0-16/8,20 * * * *"
           enable: true
           argument: jd_joy_reward&jd_cash&jd_small_home&jd_live&jd_gold_creator&jd_bookshop&jd_qqxing
     - timer: #健康社区
         parameters:
           name: healthcommunity
-          cronExpression: "0 0 2,6,10,13,16,20 * * * *"
+          cronExpression: "0 0 2,6,10,13,19,20,21 * * * *"
           enable: true
-          argument: jd_z_health_community&jd_sendBeans&jd_necklace&jd_live_lottery_social
+          argument: jd_z_health_community&jd_sendBeans&jd_necklace&jd_live_lottery_social&jd_live_redrain&jd_super_redrain
     - timer: #5G超级盲盒 #省钱大赢家之翻翻乐#天天加速#PK
         parameters:
           name: mohe_speedjd_ddo_pk_europeancup_qjd
@@ -62,9 +63,9 @@ inputs:
     - timer: #东东超市 #京喜财富岛 # 京喜牧场#电技经理
         parameters:
           name: cfd_superMarket
-          cronExpression: "0 30 1,3,5,9,13,16,19,23 * * * *"
+          cronExpression: "0 30 3,5,9,13,19,20,21,23 * * * *"
           enable: true
-          argument: jd_superMarket&jd_jxmc&jd_djjl&jd_ddo_pk
+          argument: jd_superMarket&jd_jxmc&jd_djjl&jd_ddo_pk&jd_half_redrain
     - timer: #京豆变动通知 #疯狂的joy #京东排行榜 #领京豆额外奖励 #闪购盲盒 #京小兑 #幸运大转盘
         parameters:
           name: beanchange_rankingList_beanhome_sgmh_jxd_paoku
