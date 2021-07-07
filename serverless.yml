@@ -40,7 +40,7 @@ inputs:
           name: feedPets_joy_moneyTree_plantBean_jdfactory_healthenergy
           cronExpression: "0 3 0,3-23/1 * * * *"
           enable: true
-          argument: jd_joy_feedPets&jd_joy&jd_moneyTree&jd_plantBean&jd_jdfactory&jd_z_health_energy
+          argument: jd_moneyTree&jd_plantBean&jd_jdfactory&jd_z_health_energy&jd_joy_park_open
     - timer: #宠汪汪积分兑换京豆 #签到领现金 #东东小窝 #京东直播 #金榜创造营 
         parameters:
           name: joyreward_cash_smallhome_live_bookshop_qqxing
