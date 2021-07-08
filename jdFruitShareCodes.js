@@ -8,9 +8,9 @@
 // 如: 京东账号1的shareCode1@京东账号1的shareCode2&京东账号2的shareCode1@京东账号2的shareCode2
 let FruitShareCodes = [
    //账号一的好友shareCode,不同好友的shareCode中间用@符号隔开
-  'hhhh',
+  '26cd4718baef44cfbf669857140f953d@5e247a8a74774714be6d5a69ce391040@bc13ef4c5d7b4bdd98df5b10750b3a53@7356e14bcced429cb309ad7da6c08c04@e0252680deb04f47a467796a563104a9@c96827f179d542a4be06946fe5569b26@d652f8937b04488ba83a991bed9773a5',
   //账号二的好友shareCode,不同好友的shareCode中间用@符号隔开
-  'hhhh',
+  '26cd4718baef44cfbf669857140f953d@5e247a8a74774714be6d5a69ce391040@bc13ef4c5d7b4bdd98df5b10750b3a53@7356e14bcced429cb309ad7da6c08c04@e0252680deb04f47a467796a563104a9@c96827f179d542a4be06946fe5569b26@d652f8937b04488ba83a991bed9773a5',
  ]
 // 判断github action里面是否有水果互助码
 if (process.env.FRUITSHARECODES) {
