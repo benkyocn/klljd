@@ -57,9 +57,9 @@ inputs:
     - timer: #5G超级盲盒 #省钱大赢家之翻翻乐#天天加速#PK
         parameters:
           name: mohe_speedjd_ddo_pk_europeancup_qjd
-          cronExpression: "0 0 1,3,5,7,10,15,20 * * * *"
+          cronExpression: "0 0 1,3,5,7,10,12,14,16,20,22 * * * *"
           enable: true
-          argument: jd_mohe&jd_speed&jd_europeancup&jd_qjd
+          argument: jd_mohe&jd_speed&jd_europeancup&jd_qjd&jd_summer_movement
     - timer: #东东超市 #京喜财富岛 # 京喜牧场#电技经理
         parameters:
           name: cfd_superMarket
