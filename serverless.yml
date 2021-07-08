@@ -63,9 +63,9 @@ inputs:
     - timer: ##特物z #汪汪乐园
         parameters:
           name: superBrand_joypark
-          cronExpression: "0 10 0,9,13,21 * * * *"
+          cronExpression: "0 20 0,1,3,10-21/1 * * * *"
           enable: true
-          argument: jd_superBrand&jd_joy_park_task
+          argument: jd_superBrand&jd_joy_park_task&jd_summer_movement
     - timer: #京豆变动通知 #疯狂的joy #京东排行榜 #领京豆额外奖励 #闪购盲盒 #京小兑 #特物z
         parameters:
           name: beanchange_crazyjoy_rankingList_beanhome_sgmh_jxd
