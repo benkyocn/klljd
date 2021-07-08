@@ -23,13 +23,13 @@ inputs:
           name: beansign_clublottery_shop_try
           cronExpression: "0 1 0,4,15,22 * * * *"
           enable: true
-          argument: jd_bean_sign&jd_club_lottery&jd_shop&jd_sign
+          argument: jd_bean_sign&jd_club_lottery&jd_shop&jd_sign&jd_DrawEntrance
     - timer: #取关京东店铺商品 #京东抽奖机 #京东汽车 #京东秒秒币 #天天提鹅 
         parameters:
           name: unsubscribe_lotteryMachine_car_ms_jintie
-          cronExpression: "0 0 0 * * * *"
+          cronExpression: "0 0 0,3,11,17,21 * * * *"
           enable: true
-          argument: jd_unsubscribe&jd_lotteryMachine&jd_car&jd_ms&jd_get_share_code
+          argument: jd_unsubscribe&jd_lotteryMachine&jd_car&jd_ms&jd_get_share_code&jd_paoku&jd_wishingPool
     - timer: #东东农场 #东东萌宠 #京东极速版红包 #美丽研究院
         parameters:
           name: fruit_pet_jxnc_speedsign_speedredpocke_beauty
@@ -57,7 +57,7 @@ inputs:
     - timer: #东东超市  #京喜牧场 #京享值PK
         parameters:
           name: cfd_superMarket
-          cronExpression: "0 30 2,4,19,20,21,6-23/3 * * * *"
+          cronExpression: "0 30 2,6,19,20,21,6-23/3 * * * *"
           enable: true
           argument: jd_superMarket&jd_jxmc&jd_joy_park&jd_half_redrain&jd_ddo_pk
     - timer: ##特物z #汪汪乐园
@@ -75,9 +75,9 @@ inputs:
     - timer: #金融养猪 #十元街 #京东快递 #京东赚赚 #点点券 #女装盲盒 #电竞经理 #东东乐园 #柠檬零食街
         parameters:
           name: pigPet_syj_kd_jdzz_nzmh_necklace_nzmh_djjl_ddly_lsj
-          cronExpression: "0 20 0,5,16,20 * * * *"
+          cronExpression: "0 30 0,6,16,20 * * * *"
           enable: true
-          argument: jd_pigPet&jd_syj&jd_kd&jd_jdzz&jd_necklace&jd_nzmh&&jd_djjl&jd_ddly&jd_lsj
+          argument: jd_pigPet&jd_syj&jd_kd&jd_jdzz&jd_necklace&jd_nzmh&&jd_djjl&jd_ddly&jd_lsj&jd_goodMorning
   environment: #  环境变量
     variables: #  环境变量对象
       AAA: BBB # 不要删除，用来格式化对齐追加的变量的
