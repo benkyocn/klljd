@@ -41,7 +41,7 @@ inputs:
           name: feedPets_moneyTree_plantBean_dreamFactory_jdfactory_healthenergy
           cronExpression: "0 3 1,6-23/1 * * * *"
           enable: true
-          argument: jd_moneyTree&jd_plantBean&jd_jdfactory&jd_z_health_energy&jd_ddo_pk
+          argument: jd_moneyTree&jd_plantBean&jd_jdfactory&jd_z_health_energy
     - timer: #宠汪汪积分兑换京豆 #签到领现金 #东东小窝 #京东直播 #金榜创造营 
         parameters:
           name: cash_smallhome_live
@@ -57,9 +57,9 @@ inputs:
     - timer: #东东超市  #京喜牧场 #京享值PK
         parameters:
           name: cfd_superMarket
-          cronExpression: "0 30 8,12,19,6-23/3 * * * *"
+          cronExpression: "0 30 2,4,19,20,21,6-23/3 * * * *"
           enable: true
-          argument: jd_superMarket&jd_jxmc&jd_joy_park
+          argument: jd_superMarket&jd_jxmc&jd_joy_park&jd_half_redrain&jd_ddo_pk
     - timer: ##特物z #汪汪乐园
         parameters:
           name: superBrand_joypark
