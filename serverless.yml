@@ -36,12 +36,12 @@ inputs:
           cronExpression: "0 5 0-18/6,8 * * * *"
           enable: true
           argument: jd_fruit&jd_pet&jd_speed_sign&jd_speed_redpocke
-    - timer: #宠汪汪 #摇钱树 #京东种豆得豆  #东东工厂 #健康社区收取能量
+    - timer: #宠汪汪 #摇钱树 #京东种豆得豆  #东东工厂 #健康社区收取能量#我是大佬#QQ星
         parameters:
           name: feedPets_moneyTree_plantBean_dreamFactory_jdfactory_healthenergy
           cronExpression: "0 3 1,6-23/1 * * * *"
           enable: true
-          argument: jd_moneyTree&jd_plantBean&jd_jdfactory&jd_z_health_energy
+          argument: jd_moneyTree&jd_plantBean&jd_jdfactory&jd_z_health_energy&jd_wsdlb&jd_qqxing
     - timer: #宠汪汪积分兑换京豆 #签到领现金 #东东小窝 #京东直播 #金榜创造营 
         parameters:
           name: cash_smallhome_live
@@ -77,7 +77,7 @@ inputs:
           name: pigPet_syj_kd_jdzz_nzmh_necklace_nzmh_djjl_ddly_lsj
           cronExpression: "0 30 0,6,16,20 * * * *"
           enable: true
-          argument: jd_pigPet&jd_syj&jd_kd&jd_jdzz&jd_necklace&jd_nzmh&&jd_djjl&jd_ddly&jd_lsj&jd_goodMorning
+          argument: jd_pigPet&jd_syj&jd_kd&jd_jdzz&jd_necklace&jd_nzmh&&jd_djjl&jd_ddly&jd_lsj&jd_goodMorning&jd_summer_movement_card
   environment: #  环境变量
     variables: #  环境变量对象
       AAA: BBB # 不要删除，用来格式化对齐追加的变量的
