@@ -47,7 +47,7 @@ inputs:
           name: cash_smallhome_live
           cronExpression: "0 0 0,8,20 * * * *"
           enable: true
-          argument: jd_cash&jd_small_home&jd_live&jd_gold_creator&jd_mohe
+          argument: jd_cash&jd_small_home&jd_live&jd_gold_creator&jd_mohe&jd_bookshop
     - timer: #健康社区 #天天提鹅 #抢京豆
         parameters:
           name: healthcommunity_dailyegg_qjd
