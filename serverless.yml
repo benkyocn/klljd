@@ -21,9 +21,9 @@ inputs:
     - timer: #签到 #摇京豆 #进店领豆 
         parameters:
           name: beansign_clublottery_shop_try
-          cronExpression: "0 20 0,7,17,23 * * * *"
+          cronExpression: "0 20 0,7,10,17,23 * * * *"
           enable: true
-          argument: jd_bean_sign&jd_club_lottery&jd_shop&jd_sign&jd_DrawEntrance&jd_europeancup
+          argument: jd_bean_sign&jd_club_lottery&jd_shop&jd_sign&jd_DrawEntrance&jd_europeancup&jd_wxFans
     - timer: #取关京东店铺商品 #京东抽奖机 #京东汽车 #京东秒秒币 #天天提鹅 #领金贴
         parameters:
           name: unsubscribe_lotteryMachine_car_ms_jintie
