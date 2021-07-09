@@ -57,9 +57,9 @@ inputs:
     - timer: #东东超市 #京喜财富岛 #京喜牧场 #京享值PK 
         parameters:
           name: jxmc_joypark_pk_superMarket
-          cronExpression: "0 30 2,5,8,11,14,19,20,21 * * * *"
+          cronExpression: "0 30 0,3,6,9,19,20,21 * * * *"
           enable: true
-          argument: jd_jxmc&jd_half_redrain&jd_ddo_pk&jd_superMarke
+          argument: jd_sendBeans&jd_jxmc&jd_half_redrain&jd_ddo_pk&jd_superMarke
     - timer: ##特物z #汪汪乐园#燃动夏季
         parameters:
           name: superBrand_joypark
