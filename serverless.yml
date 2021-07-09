@@ -41,7 +41,7 @@ inputs:
           name: plantBean_jdfactory_healthenergy_wsdlb_qqxing_moneyTree
           cronExpression: "0 3 0,6-23/1 * * * *"
           enable: true
-          argument: jd_plantBean&jd_jdfactory&jd_z_health_energy&jd_wsdlb&jd_qqxing&jd_moneyTree
+          argument: jd_plantBean&jd_jdfactory&jd_z_health_energy&jd_wsdlb&jd_moneyTree
     - timer: #宠汪汪积分兑换京豆 #签到领现金 #东东小窝 #京东直播 #金榜创造营 #全民开红包
         parameters:
           name: cash_smallhome_live
