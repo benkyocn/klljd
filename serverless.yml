@@ -54,13 +54,13 @@ inputs:
           cronExpression: "2 36 0,6-23/4 * * * *"
           enable: true
           argument: jd_qjd&jd_z_health_community&jd_daily_egg&jd_zjb
-    - timer: #东东超市 #京喜财富岛 #京喜牧场 #京享值PK #燃动夏季
+    - timer: #东东超市 #京喜财富岛 #京喜牧场 #京享值PK 
         parameters:
-          name: jxmc_joypark_pk_summer_superMarket
+          name: jxmc_joypark_pk_superMarket
           cronExpression: "0 30 2,5,8,11,14,19,20,21 * * * *"
           enable: true
-          argument: jd_jxmc&jd_half_redrain&jd_ddo_pk&jd_summer_superMarke
-    - timer: ##特物z #汪汪乐园
+          argument: jd_jxmc&jd_half_redrain&jd_ddo_pk&jd_superMarke
+    - timer: ##特物z #汪汪乐园#燃动夏季
         parameters:
           name: superBrand_joypark
           cronExpression: "0 10 1,6,7,10,13,16,21 * * * *"
