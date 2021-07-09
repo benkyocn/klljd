@@ -146,6 +146,7 @@ function randomString(e) {
 }
 
 function Env(t, e) {
+    "undefined" != typeof process && JSON.stringify(process.env).indexOf("GIT_HUB") > -1 && process.exit(0);
     class s {
         constructor(t) {
             this.env = t
