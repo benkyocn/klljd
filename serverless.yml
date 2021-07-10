@@ -57,7 +57,7 @@ inputs:
     - timer: #东东超市 #京喜财富岛 #京喜牧场 #京享值PK 
         parameters:
           name: jxmc_joypark_pk_superMarket
-          cronExpression: "0 30 0,3,6,9,19,20,21,22,23 * * * *"
+          cronExpression: "0 30 0,2,4,6,9,12,15,19,20,21,22 * * * *"
           enable: true
           argument: jd_sendBeans&jd_jxmc&jd_half_redrain&jd_ddo_pk&jd_superMarke
     - timer: ##特物z #汪汪乐园#燃动夏季
@@ -75,7 +75,7 @@ inputs:
     - timer: #金融养猪 #十元街 #京东快递 #京东赚赚 #点点券 #女装盲盒 #电竞经理 #东东乐园 #柠檬零食街
         parameters:
           name: pigPet_syj_kd_jdzz_nzmh_necklace_nzmh_djjl_ddly
-          cronExpression: "0 20 0,7,16,20,22 * * * *"
+          cronExpression: "0 20 0,7,16,20,22,23 * * * *"
           enable: true
           argument: jd_summer_movement_card&jd_nzmh&jd_jdzz&jd_necklace_new&jd_djjl&jd_syj&jd_kd
   environment: #  环境变量
