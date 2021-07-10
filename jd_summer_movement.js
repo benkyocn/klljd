@@ -12,7 +12,7 @@ const $ = new Env('燃动夏季');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 
 const https = require('https');
-const fs = require('fs/promises');
+const fs = require('fs').promises;
 const { R_OK } = require('fs').constants;
 const vm = require('vm');
 let smashUtils;
@@ -28,7 +28,7 @@ if ($.isNode() && process.env.summer_movement_ShHelpFlag) {
 }
 
 
-const ShHelpAuthorFlag = false;//是否助力作者SH  true 助力，false 不助力
+const ShHelpAuthorFlag = true;//是否助力作者SH  true 助力，false 不助力
 //IOS等用户直接用NobyDa的jd cookie
 let cookiesArr = [];
 $.cookie = '';
@@ -38,7 +38,11 @@ $.ShInviteList = [];
 $.innerShInviteList = [
   'H8mphLbwLgz3e4GeFdc0g9GS9KyvaS3S',
   'H8mphLbwLn_LHtvAULB0thOUapqKwhU',
-  'H8mphLbwLnPnJ8L9XqdUv7O1wfsqrXQ'
+  'H8mphLbwLnPnJ8L9XqdUv7O1wfsqrXQ',
+  'H8mphLbwLg_xLIKcQ9I30BOoZKpsdike',//zero205：我的互助码，加在smiek2221大佬后面
+  'H8mphLbwLg2gd4rIQoEz19OIROyGRmqQ',
+  'H8mphLbwLgz2ftDOEtQx1Yp-v5_fkMS_',
+  'H8mphO2nRAmleYWfHtA0uY-QzpCd'
 ];
 if ($.isNode()) {
   Object.keys(jdCookieNode).forEach((item) => {
@@ -66,7 +70,7 @@ const UA = $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT :
       '新增 微信任务\n' +
       '移除百元守卫战 请到help食用\n' +
       '活动时间：2021-07-08至2021-08-08\n' +
-      '脚本更新时间：2021年7月10日 02点00分\n'
+      '脚本更新时间：2021年7月10日 10点00分\n'
       );
       if(`${summer_movement_joinjoinjoinhui}` === "true") console.log('您设置了入会')
       if(Number(summer_movement_ShHelpFlag) === 1){
