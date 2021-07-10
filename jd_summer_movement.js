@@ -23,7 +23,7 @@ if ($.isNode() && process.env.summer_movement_joinjoinjoinhui) {
 }
 
 // 百元守卫战SH
-let summer_movement_ShHelpFlag = 1;// 0不开启也不助力 1开启并助力 2开启但不助力
+let summer_movement_ShHelpFlag = 2;// 0不开启也不助力 1开启并助力 2开启但不助力
 if ($.isNode() && process.env.summer_movement_ShHelpFlag) {
   summer_movement_ShHelpFlag = process.env.summer_movement_ShHelpFlag;
 }
