@@ -45,9 +45,9 @@ inputs:
     - timer: #宠汪汪积分兑换京豆 #签到领现金 #东东小窝 #京东直播 #金榜创造营 #全民开红包
         parameters:
           name: cash_smallhome_live
-          cronExpression: "0 0 0,8,20 * * * *"
+          cronExpression: "0 0 1,12,17 * * * *"
           enable: true
-          argument: jd_cash&jd_small_home&jd_live&jd_gold_creator&jd_mohe&jd_bookshop
+          argument: jd_summer_movement_help&jd_cash&jd_bookshop&jd_gold_creator&jd_small_home&jd_live&jd_mohe
     - timer: #健康社区 #天天提鹅 #抢京豆#挣金币
         parameters:
           name: healthcommunity_dailyegg_qjd
