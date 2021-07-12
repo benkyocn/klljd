@@ -31,8 +31,8 @@ let helpAuthor = true;
 const randomCount = $.isNode() ? 0 : 0;
 let cash_exchange = false;//是否消耗2元红包兑换200京豆，默认否
 const inviteCodes = [
-  `eU9YHbv6Pq9VrSSUlxph@eU9YEYT0MrlbhyizsAdV@eU9YMa3UGo5ujDSruS5G@eU9YGrXwNLRhuSqxtwRO@eU9YCaTaN7tYqTewmDBk@eU9YLYXyHolOizunkBZp@eU9YLLfNLJ9wiyunijRt`,
-  `eU9YHbv6Pq9VrSSUlxph@eU9YEYT0MrlbhyizsAdV@eU9YMa3UGo5ujDSruS5G@eU9YGrXwNLRhuSqxtwRO@eU9YCaTaN7tYqTewmDBk@eU9YLYXyHolOizunkBZp@eU9YLLfNLJ9wiyunijRt`
+  `eU9YL5XqGLxSmRSAkwxR@eU9YaO7jMvwh-W_VzyUX0Q@eU9YaurkY69zoj3UniVAgg@eU9YaOnjYK4j-GvWmXIWhA@eU9YMZ_gPpRurC-foglg@eU9Ya77gZK5z-TqHn3UWhQ@eU9Yaui2ZP4gpG-Gz3EThA@eU9YaeizbvQnpG_SznIS0w@eU9Yab7gZ_py92rTyXcS0g@eU9Ya--7b65zpG7Umnsagw@eU9YarmyNagj8WzWmXQa1w@Ihgyb-q1YPkv9Wm6iw@eU9YEKXUL5VfmzSDggxO@eU9YaO2xZqhyo2jTwiYb3w@eU9YNJrlA41BkQ6JjRpV@eU9YaOS7M_x0pWiDzCZC3w@eU9Ya-7mN651-TuHwnMVhw`,
+  `-4msulYas0O2JsRhE-2TA5XZmBQ@eU9Yar_mb_9z92_WmXNG0w@eU9YaO7jMvwh-W_VzyUX0Q@eU9YaurkY69zoj3UniVAgg@eU9YaOnjYK4j-GvWmXIWhA@eU9YaO23bvtyozuGyHsR1A@eU9Yab7gZ_py92rTyXcS0g@eU9Ya--7b65zpG7Umnsagw@eU9YarmyNagj8WzWmXQa1w@Ihgyb-q1YPkv9Wm6iw@eU9YEKXUL5VfmzSDggxO@eU9YaO2xZqhyo2jTwiYb3w@eU9YNJrlA41BkQ6JjRpV@eU9YaOS7M_x0pWiDzCZC3w@eU9Ya-7mN651-TuHwnMVhw`
 ]
 let myInviteCode;
 
@@ -172,7 +172,7 @@ function index(info=false) {
                     await $.wait(5000)
                   }
                 }
-                else if (task.type === 16 || task.type===3 || task.type===5 || task.type===17 || task.type===21) {
+                else if (task.type === 15 || task.type===3 || task.type===5 || task.type===17 || task.type===21) {
                   for (let i = task.doTimes; i < task.times; ++i) {
                     console.log(`去做${task.name}任务 ${i+1}/${task.times}`)
                     await doTask(task.type, task.jump.params.url)
@@ -239,7 +239,7 @@ function helpFriend(helpInfo) {
 }
 function doTask(type,taskInfo) {
   return new Promise((resolve) => {
-    $.get(taskUrl("cash_doTask",{"type":type,"taskInfo":taskInfo}), (err, resp, data) => {
+    $.post(taskUrl("cash_doTask",{"taskInfo":taskInfo,"type":type}), (err, resp, data) => {
       try {
         if (err) {
           console.log(`${JSON.stringify(err)}`)
@@ -263,7 +263,7 @@ function doTask(type,taskInfo) {
     })
   })
 }
-function getReward(source = 1) {
+function getReward(source = 2) {
   return new Promise((resolve) => {
     $.get(taskUrl("cash_mob_reward",{"source": Number(source),"rewardNode":""}), (err, resp, data) => {
       try {
@@ -487,7 +487,7 @@ function taskUrl(functionId, body = {}) {
       'Cookie': cookie,
       'Host': 'api.m.jd.com',
       'Connection': 'keep-alive',
-      'Content-Type': 'application/json',
+      'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
       'Referer': 'http://wq.jd.com/wxapp/pages/hd-interaction/index/index',
       'User-Agent': $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : (require('./USER_AGENTS').USER_AGENT)) : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.4.4;14.3;network/4g;Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1"),
       'Accept-Language': 'zh-cn',
