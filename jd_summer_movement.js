@@ -28,7 +28,7 @@ if ($.isNode() && process.env.summer_movement_ShHelpFlag) {
 }
 
 
-const ShHelpAuthorFlag = false;//是否助力作者SH  true 助力，false 不助力
+const ShHelpAuthorFlag = true;//是否助力作者SH  true 助力，false 不助力
 //IOS等用户直接用NobyDa的jd cookie
 let cookiesArr = [];
 $.cookie = '';
@@ -36,7 +36,14 @@ $.inviteList = [];
 $.secretpInfo = {};
 $.ShInviteList = [];
 $.innerShInviteList = [
-  'H8mphLbwLgz3e4GeFdc0g9GS9KyvaS3S',
+  'HcmphLbwLm_rFtLdaYxqs8eMFibjOPYgoTERcIwsuvYlLK87rDWd-_if1D44lOc0FjFbIvAeZX-lhjkKyA',
+  'HcmphLbwLnv0NtvJZIh5lwX9LoMigtDwWhCmWHKl48SBLvjvFiTQJWsbs7L0IQUO3m6oZRLzinUVrAHb2w',
+  'HcmphLbwLkvKPvvvf65mpEHUToJjJhNdUt8EhbTW7zbuQafe4W4IPUuyR3aDMX_0EYVk4Mq2brhl08vpFg',
+  'HcmphLbwLkr4Acn5Qa52pAdBpIVcvdQqg6GuVzccilKSZ-ZkmEWWEBrv4w3Xtqi8X6nCuMXGSav4zz--0A',
+  'HcmphLD9HVX6IM_WW7Az1uRTQj6UQ4kvfdx-QvVhGdy06HaiRkJlLA',
+  'HcmphLbwLnfLONffaqJ1sJg5YznHI7kE0eSYLR98zadx3SMD4qXuSH8gGuAlRdBS6tD45ZmJy44s19kiAQ',
+  'HcmphLbwLlfiGP_oX6lpqOv4g7kA8ZipKt1FrnC8T-Z-OjGGnkPd0exQN-GuTEHQW-AMj9YI9DgKCiNTrA',
+  'HcmphLbwLnz6PNHSUJx3sjtNINw03dEa2jCQhLJBT8h_dP5ApbGxiFl8wvxtNRQxhwELLEklyrHWmIj8fw'
 ];
 
 if ($.isNode()) {
