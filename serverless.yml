@@ -39,7 +39,7 @@ inputs:
     - timer: #宠汪汪 #摇钱树 #京东种豆得豆 #京喜工厂 #东东工厂 #健康社区收取能量
         parameters:
           name: plantBean_jdfactory_healthenergy_wsdlb_qqxing_moneyTree
-          cronExpression: "0 3 0,6-23/1 * * * *"
+          cronExpression: "0 0 3,10-22/1 * * * *"
           enable: true
           argument: jd_plantBean&jd_jdfactory&jd_z_health_energy&jd_wsdlb&jd_super_redrain
     - timer: #宠汪汪积分兑换京豆 #签到领现金 #东东小窝 #京东直播 #金榜创造营 #全民开红包
