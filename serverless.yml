@@ -63,7 +63,7 @@ inputs:
     - timer: ##特物z #汪汪乐园#燃动夏季
         parameters:
           name: superBrand_joypark_summer_movemen_joy_park
-          cronExpression: "0 10 0,4,7-23/1 * * * *"
+          cronExpression: "0 10 4,7-23/1 * * * *"
           enable: true
           argument: jd_zqfl&jd_summer_movement&jd_superBrand&&jd_joy_park
     - timer: #京豆变动通知 #疯狂的joy #京东排行榜 #领京豆额外奖励 #闪购盲盒 #京小兑 #特物z
