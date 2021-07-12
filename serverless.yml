@@ -41,13 +41,13 @@ inputs:
           name: plantBean_jdfactory_healthenergy_wsdlb_qqxing_moneyTree
           cronExpression: "0 3 0,6-23/1 * * * *"
           enable: true
-          argument: jd_plantBean&jd_jdfactory&jd_z_health_energy&jd_wsdlb&jd_joy_park
+          argument: jd_plantBean&jd_jdfactory&jd_z_health_energy&jd_wsdlb&jd_super_redrain
     - timer: #宠汪汪积分兑换京豆 #签到领现金 #东东小窝 #京东直播 #金榜创造营 #全民开红包
         parameters:
           name: cash_smallhome_live
           cronExpression: "2 10 0,6-22/2 * * * *"
           enable: true
-          argument: jd_summer_movement_help&jd_cash&jd_bookshop&jd_gold_creator&jd_small_home&jd_live&jd_mohe
+          argument: jd_cash&jd_bookshop&jd_gold_creator&jd_small_home&jd_live&jd_mohe
     - timer: #健康社区 #天天提鹅 #抢京豆#挣金币
         parameters:
           name: healthcommunity_dailyegg_qjd
@@ -65,7 +65,7 @@ inputs:
           name: superBrand_joypark_summer_movemen_joy_park
           cronExpression: "0 10 0,4,7-23/1 * * * *"
           enable: true
-          argument: jd_zqfl&jd_summer_movement&jd_superBrand
+          argument: jd_zqfl&jd_summer_movement&jd_superBrand&&jd_joy_park
     - timer: #京豆变动通知 #疯狂的joy #京东排行榜 #领京豆额外奖励 #闪购盲盒 #京小兑 #特物z
         parameters:
           name: beanchange_crazyjoy_rankingList_beanhome_sgmh_jxd
