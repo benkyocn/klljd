@@ -23,7 +23,7 @@ inputs:
           name: beansign_clublottery_shop_try
           cronExpression: "2 15 0,2-22/2 * * * *"
           enable: true
-          argument: jd_bean_sign&jd_club_lottery&jd_shop&jd_sign&jd_DrawEntrance&jd_dpqd
+          argument: jd_bean_sign&jd_club_lottery&jd_shop&jd_sign&jd_DrawEntrance
     - timer: #取关京东店铺商品 #京东抽奖机 #京东汽车 #京东秒秒币 #天天提鹅 #领金贴
         parameters:
           name: unsubscribe_lotteryMachine_car_ms_jintie
@@ -47,7 +47,7 @@ inputs:
           name: cash_smallhome_live
           cronExpression: "2 10 0,6-22/2 * * * *"
           enable: true
-          argument: jd_cash&jd_bookshop&jd_gold_creator&jd_small_home&jd_live&jd_mohe
+          argument: jd_cash&jd_bookshop&jd_gold_creator&jd_small_home&jd_live&jd_mohe&jd_dpqd
     - timer: #健康社区 #天天提鹅 #抢京豆#挣金币
         parameters:
           name: healthcommunity_dailyegg_qjd
