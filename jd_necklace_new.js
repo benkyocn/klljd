@@ -1,7 +1,6 @@
-// @grant    require
 const $ = new Env('点点券二代目');
 const https = require('https');
-const fs = require('fs').promises;
+const fs = require('fs/promises');
 const {R_OK} = require('fs').constants;
 const vm = require('vm');
 const UA = require('./USER_AGENTS.js').USER_AGENT;
@@ -47,7 +46,7 @@ class ZooFakerNecklace {
 
   async init() {
     console.time('ZooFakerNecklace');
-    //process.chdir(__dirname);
+    process.chdir(__dirname);
     const html = await ZooFakerNecklace.httpGet(URL);
     const script = REG_SCRIPT.exec(html);
 
